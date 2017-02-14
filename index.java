@@ -64,7 +64,7 @@ public class Assignment1 extends JApplet implements ActionListener {
     
      int paintPoint=0;
      int type=0;
-     int colorT=0;
+  
      Color[] colorS=new Color[16];
      
      
@@ -207,13 +207,25 @@ public class Assignment1 extends JApplet implements ActionListener {
     else if (e.getSource()==barC2)
         type=3;
    
-    if(e.getSource()==grayScale)
-        colorT=1;
+    if(e.getSource()==grayScale){
+    colorS[1]=new Color(242, 242, 242);
+    colorS[2]=new Color(230, 230, 230);
+    colorS[3]=new Color(204, 204, 204);
+    colorS[4]=new Color(179, 179, 179);
+    colorS[5]=new Color(166, 166, 166);
+    colorS[6]=new Color(153, 153, 153);
+    colorS[7]=new Color(192, 192, 192);
+    colorS[8]=new Color(115, 115, 115);
+    colorS[9]=new Color(89, 89, 89);
+    colorS[10]=new Color(77, 77, 77);
+    colorS[11]=new Color(64, 64, 64);
+    colorS[12]=new Color(51, 51, 51);
+    colorS[13]=new Color(38, 38, 38);
+    colorS[14]=new Color(0, 0, 0); 
+    }
     else if(e.getSource()==highContrast)
-        colorT=2;
+        ;
     else if(e.getSource()==rainbow){
-        colorT=3;
-    
     colorS[1]=new Color(0, 0, 255);
     colorS[2]=new Color(0, 255, 0);
     colorS[3]=new Color(0, 255, 255);
@@ -229,9 +241,22 @@ public class Assignment1 extends JApplet implements ActionListener {
     colorS[13]=new Color(255, 255, 128);
     colorS[14]=new Color(128, 128, 128);
     }
-    else if(e.getSource()==winter)
-        colorT=4;
-    
+    else if(e.getSource()==winter){
+        colorS[1]=new Color(230, 241, 255);
+        colorS[2]=new Color(204, 226, 255);
+        colorS[3]=new Color(179, 212, 255);
+        colorS[4]=new Color(153, 197, 255);
+        colorS[5]=new Color(128, 183, 255);
+        colorS[6]=new Color(102, 168, 255);
+        colorS[7]=new Color(77, 154, 255);
+        colorS[8]=new Color(51, 139, 255);
+        colorS[9]=new Color(26, 125, 255);
+        colorS[10]=new Color(0, 110, 255);
+        colorS[11]=new Color(0, 77, 179);
+        colorS[12]=new Color(0, 44, 102);
+        colorS[13]=new Color(0, 22, 51);
+        colorS[14]=new Color(0, 0, 0);
+    }
         repaint();
     }
 }                                                                                                
